@@ -8,6 +8,11 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 
 ## How to setup
 
+Step 1: Create a new .env file and copy .env.example <br>
+Step 2: Create a Database following the .env file Database name
+
+
+##
 
 - **[Vehikl](https://vehikl.com/)**
 - **[Tighten Co.](https://tighten.co)**
