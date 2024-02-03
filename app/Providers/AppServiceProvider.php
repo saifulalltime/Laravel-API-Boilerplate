@@ -13,7 +13,14 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        // Registering CustomService 
+        $this->app->singleton('CustomServices', function ($app) {
+            return new \App\Services\CustomServices\CustomServices;
+        });
+        //Registering our GenericResponses File as a Service Provider
+        $this->app->singleton('GenericResponses', function ($app) {
+            return new \App\Services\GenericResponses\GenericResponses;
+        });
     }
 
     /**
